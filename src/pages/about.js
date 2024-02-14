@@ -1,13 +1,12 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import Layout from '../components/layout'
 
+const pageTitle = "About Me"
 const AboutPage = () => {
   return (
-    <main>
-      <h1>About Me</h1>
-      <Link to="/">Back to Home</Link>
+    <Layout pageTitle={pageTitle}>
       <p>I’m good, thank you</p>
-    </main>
+    </Layout>
   )
 }
 
@@ -16,7 +15,7 @@ export default AboutPage
 export const Head = () => {
   return (
     <>
-      <title>About Me</title>
+      <title>{pageTitle}</title>
       <meta name="description" content="This is about page" />
     </>
   )

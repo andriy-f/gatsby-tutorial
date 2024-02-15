@@ -1,25 +1,19 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 import {
   container as containerCSS,
   heading, navLinks, navLinkItem,
   navLinkText, siteTitle as siteTitleCSSClass
 } from './layout.module.css'
+import useSiteMetadata from '../hooks/useSiteMetadata'
 
 const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-{
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}`)
+  const siteMetadata = useSiteMetadata()
 
   return (
     <div className={containerCSS}>
-      <header className={siteTitleCSSClass}>{data.site.siteMetadata.title}</header>
+      <header className={siteTitleCSSClass}>{siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>

@@ -22,7 +22,6 @@ export const Head = () => {
   return (
     <>
       <Seo pageTitle={pageTitle} />
-      <meta name="description" content={`This is ${pageTitle} page`} />
     </>
   )
 }

@@ -1,7 +1,11 @@
 import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 const pageTitle = "About Me"
+
 const AboutPage = () => {
   return (
     <Layout pageTitle={pageTitle}>
@@ -15,8 +19,8 @@ export default AboutPage
 export const Head = () => {
   return (
     <>
-      <title>{pageTitle}</title>
-      <meta name="description" content="This is about page" />
+      <Seo pageTitle={pageTitle} />
+      <meta name="description" content={'This is about page'} />
     </>
   )
 }

@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
   container as containerCSS,
   heading, navLinks, navLinkItem,
-  navLinkText
+  navLinkText, siteTitle as siteTitleCSSClass
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={containerCSS}>
-      <header>{data.site.siteMetadata.title}</header>
+      <header className={siteTitleCSSClass}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>

@@ -8,6 +8,21 @@ import {
 } from './layout.module.css'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 
+const pages = [
+  {
+    title: 'Home',
+    link: '/'
+  },
+  {
+    title: 'Blog',
+    link: '/blog'
+  },
+  {
+    title: 'About',
+    link: '/about'
+  }
+]
+
 const Layout = ({ pageTitle, children }) => {
   const siteMetadata = useSiteMetadata()
 
@@ -16,12 +31,11 @@ const Layout = ({ pageTitle, children }) => {
       <header className={siteTitleCSSClass}>{siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/">Home</Link></li>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/blog">Blog</Link></li>
-          <li className={navLinkItem}>
-            <Link className={navLinkText} to="/about">About</Link></li>
+          {pages.map(page => (
+            <li key={page.title} className={navLinkItem}>
+              <Link className={navLinkText} to={page.link}>{page.title}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
       <main>

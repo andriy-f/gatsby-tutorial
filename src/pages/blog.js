@@ -26,7 +26,7 @@ export const Head = () => (<Seo pageTitle="Blog" />)
 
 export const query = graphql`
 {
-  allMdx {
+  allMdx(sort: { frontmatter: { date: DESC } }) {
     nodes {
       frontmatter {
         date(formatString: "D MMM YYYY")

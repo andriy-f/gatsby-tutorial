@@ -10,7 +10,11 @@ const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle={pageTitle}>
       <ul>
-        {data.allFile.nodes.map(node => (<li key={node.name}>{node.name}</li>))}
+        {data.allMdx.nodes.map(node => (
+          <li key={node.id}>
+            {node.frontmatter.title} ({node.frontmatter.date})
+          </li>)
+        )}
       </ul>
     </Layout>
   )
@@ -22,10 +26,16 @@ export const Head = () => (<Seo pageTitle="Blog" />)
 
 export const query = graphql`
 {
-  allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
-      nodes {
-        name
+  allMdx {
+    nodes {
+      frontmatter {
+        date(formatString: "D MMM YYYY")
+        title
+        slug
       }
+      excerpt
+      id
     }
+  }
 }
 `

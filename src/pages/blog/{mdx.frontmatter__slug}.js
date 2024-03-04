@@ -1,19 +1,36 @@
 import * as React from 'react'
+// import { graphql } from 'gatsby'
+
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const BlogPost = () => {
+const BlogPost = (props) => {
   return (
-    <Layout pageTitle='Super Cool Blog Post'>
-      <p>This is a super cool blog post about Gatsby and MDX.</p>
+    // <Layout pageTitle={props.data.mdx.frontmatter.title}>
+    //   Posted: {props.data.mdx.frontmatter.date}
+    //   {props.children}
+    // </Layout>
+    <Layout pageTitle={props.pageContext.frontmatter.title}>
+      Posted: {props.pageContext.frontmatter.date}
+      {props.children}
     </Layout>
   )
 }
 
-export const Head = () => {
+export const Head = (props) => {
   return (
-    <Seo pageTitle='Super Cool Blog Post' />
+    <Seo pageTitle={props.pageContext.frontmatter.title} />
   )
 }
 
+// export const query = graphql`
+// query ($id: String) {
+//   mdx(id: {eq: $id}) {
+//     frontmatter {
+//       title
+//       date(formatString: "D MMM YYYY")
+//     }
+//   }
+// }
+// `
 export default BlogPost

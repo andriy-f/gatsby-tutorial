@@ -12,28 +12,28 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(react@18.3.1)
       gatsby:
-        specifier: ^5.13.3
+        specifier: ^5.14.3
         version: 5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)
       gatsby-plugin-image:
-        specifier: ^3.13.1
+        specifier: ^3.14.0
         version: 3.14.0(@babel/core@7.27.1)(gatsby-plugin-sharp@5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0))(gatsby-source-filesystem@5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)))(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       gatsby-plugin-mdx:
-        specifier: ^5.13.1
+        specifier: ^5.14.1
         version: 5.14.1(@mdx-js/react@2.3.0(react@18.3.1))(gatsby-source-filesystem@5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3)))(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       gatsby-plugin-sharp:
-        specifier: ^5.13.1
+        specifier: ^5.14.0
         version: 5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0)
       gatsby-source-filesystem:
-        specifier: ^5.13.1
+        specifier: ^5.14.0
         version: 5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))
       gatsby-transformer-sharp:
-        specifier: ^5.13.1
+        specifier: ^5.14.0
         version: 5.14.0(gatsby-plugin-sharp@5.14.0(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0))(gatsby@5.14.3(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.8.3))(graphql@16.11.0)
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
 
 packages:
@@ -6965,7 +6965,7 @@ snapshots:
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@16.11.0)
       graphql: 16.11.0
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   '@graphql-tools/optimize@1.4.0(graphql@16.11.0)':
     dependencies:
@@ -6987,7 +6987,7 @@ snapshots:
       '@graphql-tools/merge': 8.4.2(graphql@16.11.0)
       '@graphql-tools/utils': 9.2.1(graphql@16.11.0)
       graphql: 16.11.0
-      tslib: 2.4.1
+      tslib: 2.8.1
       value-or-promise: 1.0.12
 
   '@graphql-tools/utils@8.13.1(graphql@16.11.0)':

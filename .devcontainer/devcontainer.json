@@ -10,8 +10,7 @@
 	// "forwardPorts": [],
 	"mounts": [
 		{
-			"source": "${localWorkspaceFolder}/../../.pnpm-store",
-			// "target": "/root/.local/share/pnpm/store",
+			"source": "${localEnv:MY_PNPM_STORE_PATH}",
 			"target": "${containerWorkspaceFolder}/.pnpm-store",
 			"type": "bind"
 		}
